@@ -1,0 +1,27 @@
+.add-property{
+    padding:10px;
+}
+
+.title {
+    padding: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#boxes{
+    padding:20px;
+}
+label{
+    padding:10px;
+}
+
+
+button {
+    height: 42px;
+    width: 65px;
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 13px;
+    background-color: palegreen;
+}

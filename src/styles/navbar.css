@@ -1,0 +1,20 @@
+.navbar_box {
+  background-color: azure;
+  border-bottom: rgb(199, 183, 183);
+}
+
+.navbar-links-item {
+  margin: 0;
+  padding: 15px;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
