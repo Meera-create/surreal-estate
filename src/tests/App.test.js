@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from '../components/App';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Surreal estate/i);
-  expect(linkElement).toBeInTheDocument();
+describe('testing app component', () => {
+  it('checks if app renders', () => {
+    const { asFragment } = render(<BrowserRouter><App /></BrowserRouter>)
+    expect(asFragment()).toMatchSnapshot();
+  })
 });
+
+

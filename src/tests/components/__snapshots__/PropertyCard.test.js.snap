@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing props has the correct value been asserted for title prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <p />
+    <ul>
+      <li />
+    </ul>
+    <p />
+  </div>
+</DocumentFragment>
+`;

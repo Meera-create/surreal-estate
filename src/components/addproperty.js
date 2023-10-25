@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/addProperty.css";
 import axios from 'axios';
+import Alert from './alert'
 
 const AddProperty = () => {
   const initialState = {
@@ -10,46 +11,59 @@ const AddProperty = () => {
       type: "flat",
       bedrooms: "",
       bathrooms: "",
-      price: 100,
+      price: 0,
       email: "",
-      alertMessage: '',
+    },
+    alert:{
+      alertMessage: "",
       isSuccess: false,
-      isError: false,
+      
     },
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    this.setState({
+    console.log('submitting')
+    setAlert({
       alertMessage: '',
       isSuccess: false,
-      isError: false,
+      
     });
+  
 
-    axios.post(`http://localhost:4000/api/v1/PropertyListing`, this.state.fields)
-      .then(() => this.setState ({ isSuccess: true, alertMessage: 'Property added'}))
-      .catch(() => {
-        this.setState({
-          alertMessage: 'Error!!',
-          isError: true,
-        });
-        
-      });
+    axios.post(`http://localhost:4000/api/v1/PropertyListing`, fields)
+      .then(() => {
+        console.log('property added')
+        setAlert({
+          alertMessage: 'Property Added',
+          isSuccess: true,
+        })
+      })
+  
+      
+      .catch(() => 
+        setAlert({
+          alertMessage: 'Server error, please try again later',
+          isSuccess: false,
+      })
+    )
 
-
-    //console.log(fields)
-    
   };
 
+
   const handleFieldChange = (event) => {
+    
     setFields({ ...fields, [event.target.name]: event.target.value });
   };
 
   return (
     <div className="add-property">
-      <form onSubmit={handleAddProperty}>
+      <form onSubmit={handleAddProperty} >
+        <Alert message={alert.message} success={alert.isSuccess} /> 
+     
         <div className="title">ADD A PROPERTY</div>
 
         <div id="boxes">

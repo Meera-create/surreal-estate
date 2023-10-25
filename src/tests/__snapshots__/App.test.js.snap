@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing app component checks if app renders 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar_box"
+    >
+      <nav
+        class="navbar"
+      >
+        <div>
+          <img
+            alt="logo_image"
+            src="../styles/SURREAL ESTATE.jpg"
+          />
+          <ul
+            class="navbar-links-item"
+          >
+            <li>
+              <a
+                class="item"
+                href="/"
+              >
+                View Properties
+              </a>
+            </li>
+            <li>
+              <a
+                class="item"
+                href="/add-property"
+              >
+                Add a property
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      Properties Page
+    </div>
+  </div>
+</DocumentFragment>
+`;
