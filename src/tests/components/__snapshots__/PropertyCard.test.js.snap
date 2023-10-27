@@ -1,15 +1,238 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing props has the correct value been asserted for title prop 1`] = `
+exports[`testing props renders value for bathrooms prop 1`] = `
 <DocumentFragment>
   <div
     class="property_lists"
   >
-    <p />
-    <ul>
-      <li />
-    </ul>
-    <p />
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    />
+    <h3
+      class="price"
+    />
+    <h3
+      class="location"
+    >
+      ,
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:11, bedrooms:
+    </p>
+    <p
+      class="email"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing props renders value for bedrooms prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    />
+    <h3
+      class="price"
+    />
+    <h3
+      class="location"
+    >
+      ,
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:, bedrooms:1
+    </p>
+    <p
+      class="email"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing props renders value for city prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    />
+    <h3
+      class="price"
+    />
+    <h3
+      class="location"
+    >
+      ,test city
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:, bedrooms:
+    </p>
+    <p
+      class="email"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing props renders value for email prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    />
+    <h3
+      class="price"
+    />
+    <h3
+      class="location"
+    >
+      ,
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:, bedrooms:
+    </p>
+    <p
+      class="email"
+    >
+      test@test
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing props renders value for price prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    />
+    <h3
+      class="price"
+    >
+      111
+    </h3>
+    <h3
+      class="location"
+    >
+      ,
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:, bedrooms:
+    </p>
+    <p
+      class="email"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing props renders value for title prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    >
+      test title
+    </h2>
+    <h3
+      class="price"
+    />
+    <h3
+      class="location"
+    >
+      ,
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:, bedrooms:
+    </p>
+    <p
+      class="email"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing props renders value for type prop 1`] = `
+<DocumentFragment>
+  <div
+    class="property_lists"
+  >
+    <h1
+      class="title"
+    >
+      List of Properties
+    </h1>
+    <h2
+      class="property_title"
+    />
+    <h3
+      class="price"
+    />
+    <h3
+      class="location"
+    >
+      test type,
+    </h3>
+    <p
+      class="property_details"
+    >
+      bathrooms:, bedrooms:
+    </p>
+    <p
+      class="email"
+    />
   </div>
 </DocumentFragment>
 `;

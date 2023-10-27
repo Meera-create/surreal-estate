@@ -1,17 +1,17 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Alert from '../../components/alert';
 import '@testing-library/jest-dom';
 
 describe('tests alert component', () => {
     test('displays an error message', () => {
-        const { getByText, asFragment } = render(<Alert message="Error!" />);
-        expect(getByText(/Error/).textContent).toBe('Error!');
+        const { asFragment } = render(<Alert message="Error!" />);
+        expect(screen.getByText(/Error!/)).toBeInTheDocument();
         expect(asFragment()).toMatchSnapshot();
     });
     test('displays success message', () => {
-        const { getByText, asFragment } = render(<Alert message="Success!!" success={true} />);
-        expect(getByText(/Success/).textContent).toBe('Success!!');
+        const { asFragment } = render(<Alert message="Success!!" success={true} />);
+        expect(screen.getByText(/Success/)).toBeInTheDocument();
         expect(asFragment()).toMatchSnapshot();
     });
     test('doesnt render success message if message props is empty', () => {

@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('testing app component', () => {
-  it('checks if app renders', () => {
+  test('checks if app renders', () => {
     const { asFragment } = render(<BrowserRouter><App /></BrowserRouter>)
     expect(asFragment()).toMatchSnapshot();
   })

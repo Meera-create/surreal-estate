@@ -40,7 +40,43 @@ exports[`testing app component checks if app renders 1`] = `
       </nav>
     </div>
     <div>
-      Properties Page
+      <div
+        class="title"
+      >
+        Properties Page
+      </div>
+      <div
+        class="properties"
+      >
+        <div
+          class="property_lists"
+        >
+          <h1
+            class="title"
+          >
+            List of Properties
+          </h1>
+          <h2
+            class="property_title"
+          />
+          <h3
+            class="price"
+          />
+          <h3
+            class="location"
+          >
+            ,
+          </h3>
+          <p
+            class="property_details"
+          >
+            bathrooms:, bedrooms:
+          </p>
+          <p
+            class="email"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
