@@ -7,6 +7,7 @@
   margin: 0;
   padding: 15px;
   display: inline-block;
+  width:30rem;
 }
 
 li {
@@ -17,4 +18,10 @@ li {
 
 a {
   text-decoration: none;
+  display: inline-block;
+  width:20rem;
+}
+
+a.item{
+  display: inline;
 }

@@ -1,0 +1,16 @@
+h1{
+    padding:0.5rem;
+    color:blue;
+}
+
+h3, p {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+
+.property_lists{
+    margin-left:12rem;
+}

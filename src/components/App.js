@@ -7,7 +7,12 @@ import AddProperty from './addproperty';
 import React from 'react';
 
 
-const App =() => {
+const App = () => {
+  
+  const initialState = {
+    userID:""
+  }
+  
   return (
     <div className="App">
       

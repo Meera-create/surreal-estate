@@ -1,0 +1,12 @@
+.sidebar{
+    width: 10rem;
+    height: 100%;
+    display: block;
+    position: fixed;
+    border-right:2px solid black;
+}
+
+
+a{
+    display: block;
+}
