@@ -1,6 +1,6 @@
 h1{
     padding:0.5rem;
-    color:blue;
+    color:rgb(29, 24, 24);
 }
 
 h3, p {
@@ -14,3 +14,13 @@ h3, p {
 .property_lists{
     margin-left:12rem;
 }
+
+
+h1.title{
+    text-decoration: underline;
+}
+
+h1.title_page{
+    text-align:center;
+}
+

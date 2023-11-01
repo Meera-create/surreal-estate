@@ -25,3 +25,13 @@ a {
 a.item{
   display: inline;
 }
+
+img{
+  height:7rem;
+}
+
+a.item {
+    display: inline;
+    position: relative;
+    top: -3rem;
+}

@@ -1,12 +1,33 @@
 .sidebar{
-    width: 10rem;
+    width: 13rem;
     height: 100%;
     display: block;
     position: fixed;
     border-right:2px solid black;
+    margin-top:9rem;
+    left:0rem;
+    bottom:-13rem;
+    background-color:#c98d97;
+}
+
+h1{
+    font-size: 1rem;
 }
 
 
 a{
     display: block;
+    margin:0 auto;
+    width:11rem;
+    text-align:center;
+}
+
+button{
+    width:5rem;
+    margin-left:4rem;
+}
+
+input[type="text"] {
+    margin-left: 1rem;
+    margin-top: 1rem;
 }

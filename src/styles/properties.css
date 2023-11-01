@@ -1,3 +1,14 @@
 .properties{
-    margin-left:13rem;
+    margin-left:16rem;
+    background-color: #e2d0de;
+    margin-top:1rem;
+}
+
+h1.title_page{
+    font-size:2.5rem;
+}
+
+
+.single_property{
+    background-color: #ffabf8;
 }

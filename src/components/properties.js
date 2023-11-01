@@ -24,6 +24,7 @@ const Properties = () => {
         axios.get(`http://localhost:4000/api/v1/PropertyListing`)
             .then(({ data }) => {
                 setProperties(data)
+                console.log(data)
             })
             .catch((error)=> {
     setAlert({ message: "There was an error, try again!" })
@@ -34,23 +35,35 @@ const Properties = () => {
 
     const { search } = useLocation();
     
-    useEffect(() => { 
-        axios.get(`http://localhost:4000/api/PropertyListing${search}`)
-            .then(({ data }) => setProperties(data))
-        .catch(err => console.error(err))
+    useEffect(() => {
+        console.log(search)
+        axios.get(`http://localhost:4000/api/v1/PropertyListing${search}`)
+            .then(({ data }) => {
+                setProperties(data)
+                console.log(data)
+            })
+            .catch(err => {
+                console.log('my error')
+                console.error(err)
+            })
+    
     }, [search]);
  
 
     
     return (
         <div className="properties_page">
-            <div className="title">Properties Page</div>
-            <h1>List of Properties</h1>
-            <Alert message={alert.message} />
             <Sidebar />
+            
+            <h1 className="title_page">List of Properties</h1>
+            
+            {alert && <Alert message={alert.message} />}
+            
             <div className="properties">
-            {properties.map(property => (
-                    <PropertyCard key={property._id} {...property} />
+                {properties.map((property,index) => (
+                <div className="single_property" key={index}>
+                        <PropertyCard  {...property} />
+                    </div>
             ))}
                 </div>
             
@@ -60,3 +73,5 @@ const Properties = () => {
 
 
 export default Properties;
+
+// 
