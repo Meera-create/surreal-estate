@@ -24,3 +24,6 @@ Instructions:
 -
 
 Future additions:
+- I would like to add images for ecah listing
+- improve the styling perhaps using SASS styling
+- create a home page
